@@ -1,9 +1,10 @@
 import React from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline h-screen flex items-center justify-center">Hello world!</h1>
     </>
   );
 }
