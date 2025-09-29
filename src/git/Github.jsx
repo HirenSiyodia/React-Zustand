@@ -15,10 +15,10 @@ const Github = () => {
     },[])
 
   return (
-    <div className='flex align-start justify-center py-10 text-center bg-gray-500 m-4 text-white text-2xl gap-4'>Github Followings: {data.following}
+    <div className='flex align-start justify-center py-10 text-center bg-gray-400 m-4 text-white text-2xl gap-4'>Github Followings: {data.following}
     <img src={data.avatar_url} alt='Git Image' width={180}/>
     </div>
   )
 }
 
-export default Github
+export default Github;

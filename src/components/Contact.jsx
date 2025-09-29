@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0">
+        <div className="relative flex items-top justify-center min-h-[540px] bg-white sm:items-center sm:pt-0">
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div className="mt-8 overflow-hidden">
                     <div className="grid grid-cols-1 md:grid-cols-2">
@@ -36,7 +36,7 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    Acme Inc, Street, State, Postal Code
+                                    Mumbai - 400101
                                 </div>
                             </div>
 
@@ -58,7 +58,7 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    +44 1234567890
+                                    +91 98199 13272
                                 </div>
                             </div>
 
@@ -80,7 +80,7 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    info@acme.org
+                                    info@hirensiyodia.com
                                 </div>
                             </div>
                         </div>

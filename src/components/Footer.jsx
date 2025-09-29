@@ -1,4 +1,5 @@
 import React from "react";
+import logo from '../assets/logo.png';
 import {Link} from 'react-router-dom';
 
 export default function Footer() {
@@ -9,7 +10,7 @@ export default function Footer() {
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
-                                src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+                                src={logo}
                                 className="mr-3 h-16"
                                 alt="Logo"
                             />
@@ -24,9 +25,24 @@ export default function Footer() {
                                         Home
                                     </Link>
                                 </li>
-                                <li>
+                                <li className="mb-4">
                                     <Link to="/about" className="hover:underline">
                                         About
+                                    </Link>
+                                </li>
+                                <li className="mb-4">
+                                    <Link to="/contact" className="hover:underline">
+                                        Contact Us
+                                    </Link>
+                                </li>
+                                <li className="mb-4">
+                                    <Link to="/github" className="hover:underline">
+                                        GitHub
+                                    </Link>
+                                </li>
+                                <li className="mb-4">
+                                    <Link to="/loader" className="hover:underline">
+                                        Loader
                                     </Link>
                                 </li>
                             </ul>
