@@ -1,5 +1,4 @@
 import React from "react";
-import logo from '../assets/logo.png';
 import {Link} from 'react-router-dom';
 
 export default function Footer() {
@@ -10,7 +9,7 @@ export default function Footer() {
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
-                                src={logo}
+                                src=''
                                 className="mr-3 h-16"
                                 alt="Logo"
                             />
@@ -52,7 +51,7 @@ export default function Footer() {
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
                                     <a
-                                        href="https://github.com/hiteshchoudhary"
+                                        href="#"
                                         className="hover:underline"
                                         target="_blank"
                                         rel="noreferrer"

@@ -1,4 +1,15 @@
+import { useStore } from "../store";
+
 export default function Contact() {
+
+    const {name, email, tel, setName, setEmail, setTel} = useStore();
+
+    const handleSubmit = (e) => {
+            e.preventDefault()
+        console.log("form submitted", {name, email, tel});
+    }
+    
+
     return (
         <div className="relative flex items-top justify-center min-h-[540px] bg-white sm:items-center sm:pt-0">
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
@@ -85,7 +96,7 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <form className="p-6 flex flex-col justify-center">
+                        <form className="p-6 flex flex-col justify-center" onSubmit={handleSubmit}>
                             <div className="flex flex-col">
                                 <label for="name" className="hidden">
                                     Full Name
@@ -94,6 +105,8 @@ export default function Contact() {
                                     type="name"
                                     name="name"
                                     id="name"
+                                    value={name}
+                                    onChange={(e)=>setName(e.target.value)}
                                     placeholder="Full Name"
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
@@ -107,6 +120,8 @@ export default function Contact() {
                                     type="email"
                                     name="email"
                                     id="email"
+                                    value={email}
+                                    onChange={(e)=>setEmail(e.target.value)}
                                     placeholder="Email"
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
@@ -120,6 +135,8 @@ export default function Contact() {
                                     type="tel"
                                     name="tel"
                                     id="tel"
+                                    value={tel}
+                                    onChange={(e)=>setTel(e.target.value)}
                                     placeholder="Telephone Number"
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
