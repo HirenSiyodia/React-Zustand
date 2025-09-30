@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
+import { useStore } from "../store";
 
 
 export default function Home() {
+
+  const {name, email, tel} = useStore();
+
+  console.log("form submitted Home:", {name, email, tel});
+  
+
   return (
     <div className="mx-auto w-full max-w-7xl">
       <aside className="relative overflow-hidden text-black rounded-lg sm:mx-12 mx-2 sm:py-12">

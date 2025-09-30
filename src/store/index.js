@@ -1,5 +1,7 @@
 import {create} from 'zustand';
 
+// Global state management easily using Zustand
+
 export const useStore = create((set) => ({
 name:"",
 email:"",
