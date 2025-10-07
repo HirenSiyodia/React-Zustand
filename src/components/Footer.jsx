@@ -1,4 +1,5 @@
 import React from "react";
+import logo from '../assets/logo.png';
 import {Link} from 'react-router-dom';
 
 export default function Footer() {
@@ -9,8 +10,8 @@ export default function Footer() {
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
-                                src=''
-                                className="mr-3 h-16"
+                                src={logo}
+                                className="h-8 w-auto object-contain mr-2"
                                 alt="Logo"
                             />
                         </Link>
