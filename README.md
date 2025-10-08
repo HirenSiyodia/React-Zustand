@@ -1,16 +1,29 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Zustand (German for “state”) is a small, fast, and scalable state management library for React applications.
+It helps manage global state — data shared across multiple components — without the complexity of Redux or Context API.
 
-Currently, two official plugins are available:
+# 📦 Features
+- Zustand uses a minimal and intuitive API — you can create and use stores with just a few lines of code using create().
+- Unlike Redux, there are no reducers, actions, or types to define — just functions.
+- Zustand provides React hooks (useStore) for accessing and updating state easily.
+- You can call APIs or handle asynchronous logic (like fetch) directly inside the store.
+- Zustand stores are independent of React — you can even use them in plain JS or with other frameworks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🚀 Tech Stack
+- React (frontend)
+- Vite (build tool)
+- Tailwind CSS (styling)
 
-## React Compiler
+# ⚙️ Installation
+### * Clone the Repo
+git clone https://github.com/HirenSiyodia/React-Zustand.git
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### * Navigate into it
+cd React-Router-Zustand
 
-## Expanding the ESLint configuration
+### * Install dependencies
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### * Run it locally
+npm run dev
