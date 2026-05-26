@@ -89,7 +89,7 @@ export default function Footer() {
                     <span className="text-sm text-gray-500 sm:text-center">
                         © 2025
                         <a href="#" className="hover:underline">
-                            hirensiyodia
+                            Hiren Siyodia
                         </a>
                         . All Rights Reserved.
                     </span>
@@ -173,7 +173,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-                    <p className="text-center text-xs pt-8">© 2026 Hiren Siyodia. All rights reserved.</p>
         </footer>
     );
 }
