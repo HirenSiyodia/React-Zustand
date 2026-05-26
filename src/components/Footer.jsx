@@ -173,6 +173,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
+                    <p className="text-center text-xs pt-8">© 2026 Hiren Siyodia. All rights reserved.</p>
         </footer>
     );
 }
